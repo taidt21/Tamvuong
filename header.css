@@ -1,0 +1,56 @@
+
+header{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.logo_brand img {
+    width:115px;
+    height: 65px;
+}
+.nav-item{
+    position: relative;
+    transition: .4s;
+}
+.nav-item:hover .nav-link {
+    position: relative;
+    color: var(--main);
+}
+.navbar-nav {
+    gap:40px;
+}
+.navbar-nav .dropdown-menu{
+    display: flex;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transition: .4s;
+    opacity: 0;
+    transform:translateX(-50%) translateY(20%);
+    pointer-events: none;
+    background-color:var(--main);
+}
+.navbar-nav .dropdown-menu .dropdown-item{
+    color: var(--white);
+    transition: .4s;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover{
+    color: var(--main);
+}
+header .nav-item:hover .dropdown-menu{
+    opacity: 1;
+    transform:translateX(-50%) translateY(0);
+    pointer-events: all;
+}
+.has_dropdown .nav-link::after{
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-top: 5px solid var(--title);
+
+}
+.has_dropdown  .nav-link{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
