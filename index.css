@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    white-space: normal;
 }
 :root{
     --main:#9a1c21;
@@ -11,6 +12,11 @@
     --description:#212529;
     --white:#fff;
 
+}
+html,body{
+    overflow-x:hidden ;
+    overflow-x: hidden;
+    width: 100vw;
 }
 a{
     text-decoration: none;

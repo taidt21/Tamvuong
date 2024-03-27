@@ -15,10 +15,10 @@ header{
     position: relative;
     color: var(--main);
 }
-.navbar-nav {
+.navbar-nav.nav-lg {
     gap:40px;
 }
-.navbar-nav .dropdown-menu{
+.navbar-nav.nav-lg .dropdown-menu{
     display: flex;
     position: absolute;
     top:100%;
@@ -55,5 +55,41 @@ header .nav-item:hover .dropdown-menu{
     gap:8px;
 }
 @media(max-width:992px){
-    
+    .poppup-mobile{
+        position: fixed;
+        top:0;
+        height: 100vh;
+        width:70vw;
+        right: -100%;
+        background-color: var(--main);
+        padding: 16px;
+        padding-top: 30px;
+        z-index: 3;
+        transition: .4s;
+    }
+    .overlay{
+        width: 100vw;
+        left: 100vw;
+        top: 0;
+        height: 100vh;
+        transition: .4s;
+        position: fixed;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+    .navbar-nav.nav-mobile .nav-item{
+        color: var(--white);
+    }
+    .navbar-nav.nav-mobile .nav-item> span{
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    }
+    .btn-open-poppup{
+        height: 30px;
+    }
+    .btn-open-poppup span {
+        width:25px;
+        height:2px ;
+        display: block;
+        background-color: var(--main);
+    }
 }
