@@ -59,3 +59,11 @@ footer .location-text{
     margin-bottom: 0;
     text-align: center;
 }
+@media(min-width:992px){
+    .w-50.w-lg-100{
+        width: 100%!important;
+    }
+    .justify-content-lg-none{
+        justify-content: unset!important;
+    }
+}
