@@ -6,6 +6,7 @@ header{
 .logo_brand img {
     width:115px;
     height: 65px;
+    object-fit: contain;
 }
 .nav-item{
     position: relative;
@@ -33,10 +34,10 @@ header{
     color: var(--white);
     transition: .4s;
 }
-.navbar-nav .dropdown-menu .dropdown-item:hover{
+.navbar-nav.nav-lg .dropdown-menu .dropdown-item:hover{
     color: var(--main);
 }
-header .nav-item:hover .dropdown-menu{
+.navbar-nav.nav-lg .nav-item:hover .dropdown-menu{
     opacity: 1;
     transform:translateX(-50%) translateY(0);
     pointer-events: all;
@@ -54,6 +55,7 @@ header .nav-item:hover .dropdown-menu{
     align-items: center;
     gap:8px;
 }
+/* HEADER MOBILE */
 @media(max-width:992px){
     .poppup-mobile{
         position: fixed;
@@ -63,25 +65,41 @@ header .nav-item:hover .dropdown-menu{
         right: -100%;
         background-color: var(--main);
         padding: 16px;
-        padding-top: 30px;
+        padding-top: 50px;
         z-index: 3;
         transition: .4s;
+    }
+    .poppup-mobile.active{
+        right: 0;
     }
     .overlay{
         width: 100vw;
         left: 100vw;
         top: 0;
         height: 100vh;
-        transition: .4s;
+        transition: .6s;
         position: fixed;
         background-color: rgba(0,0,0,0.5);
         z-index: 2;
+    }
+    .overlay.active{
+        left: 0;
     }
     .navbar-nav.nav-mobile .nav-item{
         color: var(--white);
     }
     .navbar-nav.nav-mobile .nav-item> span{
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .navbar-nav.nav-mobile .nav-item> span::after{
+        content: "";
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        
+        border-top: 5px solid var(--white);
     }
     .btn-open-poppup{
         height: 30px;
@@ -91,5 +109,18 @@ header .nav-item:hover .dropdown-menu{
         height:2px ;
         display: block;
         background-color: var(--main);
+    }
+    .poppup-mobile .dropdown-menu{
+        background-color: unset;
+        border: 0;
+        padding-bottom: 16px;
+        padding-top: 0;
+    }
+    .btn-close.btn-close-poppup-mobile{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(107deg) brightness(101%) contrast(103%);
+        opacity: 1;
     }
 }

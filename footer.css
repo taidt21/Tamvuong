@@ -1,0 +1,61 @@
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #efefef;
+}
+.logo_footer img {
+    width: 225px;
+    height: 42px;
+}
+.title_footer{
+    color: var(--main);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.icon_phone_footer{
+    width:15px ;
+    height: 15px;
+    object-fit: contain;
+}
+#hotline_footer_tamvuong{
+    color:#4c4c4c ;
+    font-size: 18px;
+    font-weight: 700;
+}
+#list_location_footer li{
+    gap:8px;
+}
+footer .location-text{
+    font-size:14px;
+    color:var(--description);
+}
+#app img {
+    width: 126px;
+    height: 126px;
+}
+.list_item_footer{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.list_item_footer#app{
+    flex-direction: row;
+}
+#list_location_footer ul{
+    padding-left: 0;
+}
+#app a {
+    width: fit-content;
+}
+#footer_bottom{
+    background-color: #4C4D4D;
+
+}
+#footer_bottom p {
+    color: var(--white);
+    margin-bottom: 0;
+    text-align: center;
+}
