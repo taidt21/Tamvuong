@@ -23,3 +23,24 @@ ul{
 a{
     text-decoration: none;
 }
+.swiper_home{
+    height: calc(100vh - 81px);
+}
+.swiper_home .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.swiper_home .swiper-button-next,.swiper_home .swiper-button-prev{
+    color: #fff;
+   
+}
+.swiper_home  .swiper-button-next:after,.swiper_home .swiper-button-prev:after{
+    font-size:26px;
+}
+.swiper_home  .swiper-button-next{
+    right: 30px!important;
+}
+.swiper_home .swiper-button-prev{
+    left: 30px!important;
+}
