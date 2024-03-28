@@ -63,7 +63,7 @@ footer .location-text{
     .w-50.w-lg-100{
         width: 100%!important;
     }
-    .justify-content-lg-none{
+    .justify-content-lg-unset{
         justify-content: unset!important;
     }
 }
