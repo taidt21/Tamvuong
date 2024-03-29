@@ -4,6 +4,12 @@ $(document).ready(function(){
 
 
     setTimeout(() => {
+
+        $(document).scroll(function(){
+            const scroll = $(this).scrollTop();
+            $('header').addClass('fixed');
+        })
+
         const poppupHeader = $('.poppup-mobile'); 
         const overlayHeader =  $('.overlay'),
         btnOpenPoppup = $('.btn-open-poppup');
@@ -199,13 +205,131 @@ theo_doi.forEach(item =>{
         spaceBetween: 0,
         loop: true,
         speed:1000,
+        autoplay:true,          
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        
+        
       });
+      const data_product_link = [
+            {
+                name:" Airlines ticket",
+                link:"https://vietair.com.vn/",
+                icon:"icon/icon-flight-red.png"
+            },
+            {
+                name:"Promotional Ticket",
+                link:"https://vietair.com.vn/khuyen-mai-quoc-te",
+                icon:"icon/icon-promotion-ticket-red.png"
+            },
+            {
+                name:"Ticket and hotel combo",
+                link:"https://onetour.vn/",
+                icon:"icon/icon-combo-red.png"
+            },
+            {
+                name:"Tour inbound",
+                link:"https://asiamystika.com/",
+                icon:"icon/day-tour-w-red.png"
+            },
+            {
+                name:"Package Tour",
+                link:"https://onetour.vn/tour-tron-goi",
+                icon:"icon/compass-w-red.png"
+            },
+            {
+                name:"Japan Railpass",
+                link:"https://onetour.vn/japan-rail-pass.html#utm_source=tamvuong.com",
+                icon:"icon/icon-rail-pass-red.png"
+            }
+      ];
+      let item_product_link = ``;
+      data_product_link.forEach(item =>{
+        item_product_link += ` 
+                            <li>
+                                <a class="d-flex align-items-center gap-2 py-2" href="${item.link}">
+                                <span>
+                                 <img src="${item.icon}" alt=""/>
+                                </span>
+                                <span>${item.name}</span>
+                                </a>
+                            </li>
+                            `
+      });
+      $('#sidebar_nav').html(item_product_link);
+      const data_procut_images = [
+            {
+                name:"Vietair",
+                image:"img/bg-book-flight.png",
+                link:"https://vietair.com.vn/"
+            },
+            {
+                name:"Onetour",
+                image:"img/bg-book-flight.png",
+                link:"https://onetour.vn/"
+            },
+            {
+                name:"Asia mystika",
+                image:"img/bg-book-flight.png",
+                link:"https://asiamystika.com/"
+            }
+      ];
+      let item_product_images = ``;
+      data_procut_images.forEach(item =>{
+        item_product_images += `
+                                <li>
+                                    <a class="d-block" href="${item.link}">
+                                    <img class="img-fluid" src="${item.image}" alt="${item.name}"/>
+                                    </a>
+                                </li>
+                                `
+      });
+      $('#product_images').html(item_product_images);
+
+      const data_news = [
+        {
+            name:"VIETAIR - THE BRAND THAT PROVIDES ONLINE AIR TICKETS OF TAM VUONG GROUP",
+            des:"VietAIR là một đại lý vé máy bay có trụ sở tại 116 Trung Kính, Yên Hòa, Cầu Giấy, Hà Nội. Chúng tôi là một thương hiệu thuộc sở hữu của Công ty CP Thương mại Dịch vụ và Du lịch Tam Vương với kinh nghiệm 15 năm hoạt động trong lĩnh vực cung cấp vé máy bay và tour du lịch.",
+            image:"img/GN_01269.JPG",
+            link:"https://tamvuong.com/tin-tuc/tin-moi/vietair-thuong-hieu-cung-cap-ve-may-bay-truc-tuyen-cua-tam-vuong-group.html"
+        },
+        {
+            name:"Tam Vương trở thành đại diện chính thức của Hãng hàng không Air Seoul tại Việt Nam",
+            des:"Ngày 14/11, tại khách sạn Pullman Hà Nội, Air Seoul đã tổ chức sự kiện ký kết hợp tác và ra mắt chính thức tại Việt Nam đồng thời khai trương đường bay kết nối thủ đô Seoul với hai thành phố lớn là Hà Nội và Nha Trang dưới sự chứng kiến của Ông Park Jong Sun - Trưởng đại diện Tổng cục du lịch Hàn Quốc tại Việt Nam cùng đại diện của gần 70 đại lý và công ty lữ hành. Công ty CP Thương mại Dịch vụ và Du lịch Tam Vương là đại diện chính thức của hãng tại Việt Nam, với vai trò mang đến các chương trình ưu đãi và dịch vụ chất lượng cho khách hàng tại Việt Nam.",
+            image:"https://tamvuong.com/Media/Images/le-ky-ket-hop-tac-1.JPG",
+            link:"https://tamvuong.com/tin-tuc/tin-moi/tam-vuong-tro-thanh-dai-dien-chinh-thuc-cua-hang-hang-khong-air-seoul-tai-viet-nam.html",
+        },
+        {
+            name:"Thông báo thay đổi thông tin doanh nghiệp",
+            des:"",
+            image:"https://tamvuong.com/Media/Images/B%C3%A0i%20%C4%91%C4%83ng%20fb%20(1200%20x%201200%20px)%20(4).jpg",
+            link:"https://tamvuong.com/tin-tuc/tin-moi/thong-bao-thay-doi-thong-tin-doanh-nghiep.html"
+        }
+      ];
+      let item_news = ``;
+      data_news.forEach((item,index) =>{
+        item_news += `
+                        <div class="news_item">
+                            <a class="d-block" href="${item.link}">
+                                <img class="img-fluid" src="${item.image}" alt="${item.name}" />
+                            </a>
+                            <div>
+                            <h3 class="title_news">
+                            <a href="${item.link}">${item.name}</a>
+                            </h3>
+                            <p class="des_news">${item.des}</p>
+                            ${
+                                index > 0 ? `<a class="d-block" href="${item.link}">Read more</a>` : '' 
+                            }
+                            </div>
+                        </div>
+                    `
+      });
+      $('#new_home').html(item_news)
 })

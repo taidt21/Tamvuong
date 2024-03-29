@@ -8,7 +8,7 @@
 }
 :root{
     --main:#9a1c21;
-    --title:#333;
+    --navList:#333;
     --description:#212529;
     --white:#fff;
 
@@ -19,6 +19,8 @@ html,body{
 }
 ul{
     list-style-type: none;
+    padding-left: 0;
+
 }
 a{
     text-decoration: none;
@@ -33,14 +35,148 @@ a{
 }
 .swiper_home .swiper-button-next,.swiper_home .swiper-button-prev{
     color: #fff;
-   
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(1%) hue-rotate(77deg) brightness(104%) contrast(100%);
+    background-image: url("icon/airplane-flying-svgrepo-com.svg");
+    background-position: center;
+    background-size: contain;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes wave {
+    0% {
+        box-shadow: 0 0 0px 0px rgb(255 255 255 / 50%);
+    }
+    
+    100% {
+        box-shadow: 0 0 0px 12px rgb(255 255 255 / 0%);
+    }
 }
 .swiper_home  .swiper-button-next:after,.swiper_home .swiper-button-prev:after{
     font-size:26px;
+    font-size: 0;
 }
 .swiper_home  .swiper-button-next{
     right: 30px!important;
+
+    
 }
 .swiper_home .swiper-button-prev{
     left: 30px!important;
+    transform: rotate(180deg);
+}
+.swiper_home .swiper-pagination-bullet{
+    width:10px;
+    background-color: var(--main);
+    height:3px;
+    transition: .4s;
+    border-radius: 0;
+}
+.swiper_home .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width:25px;
+}
+.title_h2{
+    font-size: 25px;
+    color: var(--main);
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.title_h2::after{
+    content: "";
+    width:50%;
+    left:0;
+    top:0;
+    position: absolute;
+    border:1px solid var(--main);
+}
+.mt-60{
+    margin-top: 60px;
+}
+#sidebar_nav {
+    margin-bottom: 0;
+}
+#sidebar_nav li a {
+    color:var(--navList);
+    font-size: 14px;
+    transition: .4s;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+#sidebar_nav li a:hover{
+    background-color: var(--main);
+    color: var(--white);
+
+}
+#sidebar_nav li a:hover img {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(1%) hue-rotate(77deg) brightness(104%) contrast(100%);
+}
+#sidebar_nav li a img {
+    width:16px;
+    height: 16px;
+    object-fit: contain;
+}
+#product_images{
+    display: flex;
+    height: 100%;
+    padding-left: 0;
+}
+#product_images a {
+    height: 100%;
+}
+#product_images a img {
+    object-fit: cover;
+    height: 100%;
+}
+.product_services .col-lg-3{
+    background-color: #C4C4C4;
+}
+@media(max-width:992px){
+    .swiper_home{
+        height: calc(100vh - 63px);
+    }
+    .swiper_home .swiper-button-next,.swiper_home .swiper-button-prev{
+        display: none;
+    }
+}
+#section-3{
+    background-image: url('img/bg-right-corner-01.png');
+    background-position: right center;
+    background-size: cover;
+    padding: 20px 0;
+
+}
+.description_groups{
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+}
+.description_groups p {
+    color: var(--description);
+    text-align: justify;
+    font-size: 14px;
+}
+.title_section_3{
+    font-size: 20px;
+    color: var(--main);
+    margin-top: 25px;
+    font-weight: 600;
+}
+.detail_section_3 p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navList);
+}
+#new_home{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.news_item:first-child{
+    grid-column: 1/3;
 }
