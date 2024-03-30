@@ -205,7 +205,11 @@ theo_doi.forEach(item =>{
         spaceBetween: 0,
         loop: true,
         speed:1000,
-        autoplay:true,          
+        effect: 'fade',
+        autoplay:{
+            delay:4000,
+        },    
+              
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -332,4 +336,4 @@ theo_doi.forEach(item =>{
                     `
       });
       $('#new_home').html(item_news)
-})
+});
