@@ -295,18 +295,18 @@ theo_doi.forEach(item =>{
       const data_news = [
         {
             name:"VIETAIR - THE BRAND THAT PROVIDES ONLINE AIR TICKETS OF TAM VUONG GROUP",
-            des:"VietAIR là một đại lý vé máy bay có trụ sở tại 116 Trung Kính, Yên Hòa, Cầu Giấy, Hà Nội. Chúng tôi là một thương hiệu thuộc sở hữu của Công ty CP Thương mại Dịch vụ và Du lịch Tam Vương với kinh nghiệm 15 năm hoạt động trong lĩnh vực cung cấp vé máy bay và tour du lịch.",
+            des:"VietAIR is an airline ticket agent headquartered at 116 Trung Kinh, Yen Hoa, Cau Giay, Hanoi. We are a brand owned by Tam Vuong Trading, Services and Tourism Joint Stock Company with 15 years of experience operating in the field of providing air tickets and tours.",
             image:"img/GN_01269.JPG",
             link:"https://tamvuong.com/tin-tuc/tin-moi/vietair-thuong-hieu-cung-cap-ve-may-bay-truc-tuyen-cua-tam-vuong-group.html"
         },
         {
-            name:"Tam Vương trở thành đại diện chính thức của Hãng hàng không Air Seoul tại Việt Nam",
-            des:"Ngày 14/11, tại khách sạn Pullman Hà Nội, Air Seoul đã tổ chức sự kiện ký kết hợp tác và ra mắt chính thức tại Việt Nam đồng thời khai trương đường bay kết nối thủ đô Seoul với hai thành phố lớn là Hà Nội và Nha Trang dưới sự chứng kiến của Ông Park Jong Sun - Trưởng đại diện Tổng cục du lịch Hàn Quốc tại Việt Nam cùng đại diện của gần 70 đại lý và công ty lữ hành. Công ty CP Thương mại Dịch vụ và Du lịch Tam Vương là đại diện chính thức của hãng tại Việt Nam, với vai trò mang đến các chương trình ưu đãi và dịch vụ chất lượng cho khách hàng tại Việt Nam.",
+            name:"Tam Vuong became the official representative of Air Seoul Airlines in Vietnam",
+            des:"On November 14, at Pullman Hanoi Hotel, Air Seoul held a cooperation signing event and official launch in Vietnam and launched a flight connecting the capital Seoul with two major cities, Hanoi. and Nha Trang under the witness of Mr. Park Jong Sun - Chief Representative of the Korea Tourism Board in Vietnam and representatives of nearly 70 agents and travel companies. Tam Vuong Trading, Services and Tourism Joint Stock Company is the official representative of the company in Vietnam, with the role of bringing incentive programs and quality services to customers in Vietnam.",
             image:"https://tamvuong.com/Media/Images/le-ky-ket-hop-tac-1.JPG",
             link:"https://tamvuong.com/tin-tuc/tin-moi/tam-vuong-tro-thanh-dai-dien-chinh-thuc-cua-hang-hang-khong-air-seoul-tai-viet-nam.html",
         },
         {
-            name:"Thông báo thay đổi thông tin doanh nghiệp",
+            name:"Notice of change in business information",
             des:"",
             image:"https://tamvuong.com/Media/Images/B%C3%A0i%20%C4%91%C4%83ng%20fb%20(1200%20x%201200%20px)%20(4).jpg",
             link:"https://tamvuong.com/tin-tuc/tin-moi/thong-bao-thay-doi-thong-tin-doanh-nghiep.html"
@@ -317,15 +317,15 @@ theo_doi.forEach(item =>{
         item_news += `
                         <div class="news_item">
                             <a class="d-block" href="${item.link}">
-                                <img class="img-fluid" src="${item.image}" alt="${item.name}" />
+                                <img class="img-fluid img_news" src="${item.image}" alt="${item.name}" />
                             </a>
-                            <div>
+                            <div class="mt-3 news_item_content">
                             <h3 class="title_news">
                             <a href="${item.link}">${item.name}</a>
                             </h3>
                             <p class="des_news">${item.des}</p>
                             ${
-                                index > 0 ? `<a class="d-block" href="${item.link}">Read more</a>` : '' 
+                                index > 0 ? `<a class="d-block readMore_btn" href="${item.link}">Read more</a>` : '' 
                             }
                             </div>
                         </div>
