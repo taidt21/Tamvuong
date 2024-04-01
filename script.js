@@ -1,14 +1,11 @@
 $(document).ready(function(){
-    $('header').load('header.html');
-    $('footer').load('footer.html');
+    $('header').load('/header.html');
+    $('footer').load('/footer.html');
 
 
     setTimeout(() => {
 
-        $(document).scroll(function(){
-            const scroll = $(this).scrollTop();
-            $('header').addClass('fixed');
-        })
+    
 
         const poppupHeader = $('.poppup-mobile'); 
         const overlayHeader =  $('.overlay'),
