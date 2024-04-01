@@ -83,6 +83,7 @@ a{
     color: var(--main);
     position: relative;
     width: fit-content;
+    text-transform: uppercase;
     font-weight: 400;
     padding-top: 20px;
     margin-bottom: 20px;
