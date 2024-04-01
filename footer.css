@@ -69,7 +69,7 @@ footer .location-text{
     }
     
 }
-@media(max-width:7678px){
+@media(max-width:768px){
     .logo_footer img{
         width: 150px;
     }
