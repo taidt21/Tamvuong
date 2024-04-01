@@ -24,6 +24,26 @@ ul{
 a{
     text-decoration: none;
 }
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .breadcrumb{
+    gap: 8px;
+  }
+  .breadcrumb span {
+    color: var(--main);
+    font-weight: 700;
+  }
+  .breadcrumb  li a {
+    color: var(--navList);
+  }
 .swiper_home{
     height: calc(100vh - 81px);
 }
@@ -243,6 +263,9 @@ a{
     color: var(--white);
     border-radius: 8px;
     margin-top: auto;
+}
+.breadcrumb li{
+
 }
 @media(max-width:992px){
     .swiper_home{

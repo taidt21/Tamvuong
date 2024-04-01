@@ -267,17 +267,20 @@ theo_doi.forEach(item =>{
       const data_procut_images = [
             {
                 name:"Vietair",
-                image:"img/bg-book-flight.png",
+                logo:"icon/logo_vietair_white.svg",
+                image:"img/service_vietair.jpg",
                 link:"https://vietair.com.vn/"
             },
             {
                 name:"Onetour",
-                image:"img/bg-book-flight.png",
+                logo:"img/logo_onetour.svg",
+                image:"img/service_onetour.jpg",
                 link:"https://onetour.vn/"
             },
             {
                 name:"Asia mystika",
-                image:"img/bg-book-flight.png",
+                logo:"img/logo_inbound.jpg",
+                image:"img/service_inbound.jpg",
                 link:"https://asiamystika.com/"
             }
       ];
