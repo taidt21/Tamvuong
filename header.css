@@ -8,10 +8,10 @@ header{
     width: 100%;
     -webkit-box-shadow: 2px 5px 25px rgba(0,0,0,0.2);
     box-shadow: 2px 5px 25px rgba(0,0,0,0.2);
-
+    top: 0;
 }
 header + section {
-    margin-top: 81px;
+    margin-top: 120px;
 }
 
 .logo_brand img {

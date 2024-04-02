@@ -1,4 +1,6 @@
-
+#section-1{
+    margin-top: 81px;
+}
 .swiper_home{
     height: 590px;
 }
@@ -52,24 +54,6 @@
 }
 .swiper_home .swiper-pagination-bullet.swiper-pagination-bullet-active{
     width:25px;
-}
-.title_h2{
-    font-size: 25px;
-    color: var(--main);
-    position: relative;
-    width: fit-content;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-.title_h2::after{
-    content: "";
-    width:50%;
-    left:0;
-    top:0;
-    position: absolute;
-    border:1px solid var(--main);
 }
 
 #sidebar_nav {
@@ -261,10 +245,7 @@
     .swiper_home .swiper-button-next,.swiper_home .swiper-button-prev{
         display: none;
     }
-    .title_h2{
-        font-size:18px;
-        padding-top: 0;
-    }
+  
     #sidebar_nav{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -285,9 +266,7 @@
         width: 20px;
         height: 20px;
     }
-    .title_h2::after{
-        content: unset;
-    }
+    
 
 }
 @media(max-width:768px){

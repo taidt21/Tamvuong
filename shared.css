@@ -50,3 +50,37 @@ a{
 .pt-60{
     padding-top: 60px;
 }
+.title_h2{
+    font-size: 25px;
+    color: var(--main);
+    position: relative;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.title_h2::after{
+    content: "";
+    width:50%;
+    left:0;
+    top:0;
+    position: absolute;
+    border:1px solid var(--main);
+}
+.title_h2_page_child{
+    font-size:22px;
+    color: var(--main);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+@media(max-width:992px){
+    .title_h2{
+        font-size:18px;
+        padding-top: 0;
+    }
+    .title_h2::after{
+        content: unset;
+    }
+}

@@ -1,0 +1,16 @@
+.bg-introduction img {
+    width: 730px;
+    height: 580px;
+    object-fit: contain ;
+}
+.bg-introduction {
+    float: right;
+    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    shape-outside: polygon( 100%);
+    -webkit-shape-margin:20px;
+    shape-margin: 20px;
+}
+#thu_ngo .content{
+    font-size: 14px;
+    text-align: justify;
+}
