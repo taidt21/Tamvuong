@@ -195,7 +195,7 @@ theo_doi.forEach(item =>{
         $('#theo_doi').html(item_theo_doi);
         $('#lien_ket').html(item_lien_ket);
         $('#app').html(item_app);
-    }, 500);
+    }, 900);
     
     var swiper = new Swiper(".swiper_home", {
         slidesPerView: 1,
@@ -342,5 +342,5 @@ theo_doi.forEach(item =>{
       $('#new_home').html(item_news)
 
       
-     
+    
 });
