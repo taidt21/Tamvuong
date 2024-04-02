@@ -133,14 +133,17 @@ a{
     padding-left: calc(var(--bs-gutter-x) * .5);
     padding-right: calc(var(--bs-gutter-x) * .5);
 }
-#sidebar_nav li a:hover{
-    background-color: var(--main);
-    color: var(--white);
+@media(min-width:992px){
+    #sidebar_nav li a:hover{
+        background-color: var(--main);
+        color: var(--white);
+    
+    }
+    #sidebar_nav li a:hover img {
+        filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(1%) hue-rotate(77deg) brightness(104%) contrast(100%);
+    }
+}
 
-}
-#sidebar_nav li a:hover img {
-    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(1%) hue-rotate(77deg) brightness(104%) contrast(100%);
-}
 #sidebar_nav li a img {
     width:16px;
     height: 16px;

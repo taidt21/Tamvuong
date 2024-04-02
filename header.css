@@ -90,9 +90,7 @@ header + section {
     }
     .logo_brand img{
         height: 35px;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
+        width: 70px;
         
     }
     .poppup-mobile{
