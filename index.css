@@ -6,6 +6,7 @@
     font-family: "Inter", sans-serif;
     white-space: normal;
 }
+
 :root{
     --main:#9a1c21;
     --navList:#333;
@@ -120,7 +121,11 @@ a{
     margin-top: 60px;
 }
 #sidebar_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 0;
+    height: 100%;
 }
 #sidebar_nav li a {
     color:var(--navList);
@@ -153,7 +158,14 @@ a{
     height: 100%;
     padding: 10px;
 }
-#product_images a img {
+.product_logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(3%) hue-rotate(197deg) brightness(107%) contrast(100%);
+}
+
+#product_images a .image_product {
     object-fit: cover;
     border-radius: 8px;
     width: 100%;
@@ -162,7 +174,12 @@ a{
 .product_services .col-lg-3{
     background-color: #C4C4C4;
 }
+.product_logo img {
+    width:100px;
+    height: 40px;
 
+    object-fit: contain;
+}
 #section-3{
     background-image: url('img/bg-right-corner-01.png');
     background-position: right center;

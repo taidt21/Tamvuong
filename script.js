@@ -199,6 +199,7 @@ theo_doi.forEach(item =>{
     
     var swiper = new Swiper(".swiper_home", {
         slidesPerView: 1,
+        grabCursor:true,
         spaceBetween: 0,
         loop: true,
         speed:1000,
@@ -273,13 +274,13 @@ theo_doi.forEach(item =>{
             },
             {
                 name:"Onetour",
-                logo:"img/logo_onetour.svg",
+                logo:"icon/logo-onetour_white.png",
                 image:"img/service_onetour.jpg",
                 link:"https://onetour.vn/"
             },
             {
                 name:"Asia mystika",
-                logo:"img/logo_inbound.jpg",
+                logo:"icon/logo_inbound_white.svg",
                 image:"img/service_inbound.jpg",
                 link:"https://asiamystika.com/"
             }
@@ -288,8 +289,11 @@ theo_doi.forEach(item =>{
       data_procut_images.forEach(item =>{
         item_product_images += `
                                 <li>
-                                    <a class="d-block" href="${item.link}">
-                                    <img class="img-fluid" src="${item.image}" alt="${item.name}"/>
+                                    <a class="d-block position-relative" href="${item.link}">
+                                    <span class="product_logo">
+                                        <img src="${item.logo}" alt="${item.name}"/>
+                                    </span>
+                                    <img class="img-fluid image_product" src="${item.image}" alt="${item.name}"/>
                                     </a>
                                 </li>
                                 `
@@ -336,4 +340,7 @@ theo_doi.forEach(item =>{
                     `
       });
       $('#new_home').html(item_news)
+
+      
+     
 });
