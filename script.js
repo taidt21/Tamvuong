@@ -205,7 +205,7 @@ theo_doi.forEach(item =>{
         speed:1000,
         effect: 'fade',
         autoplay:{
-            delay:4000,
+            delay:5000,
         },    
               
         pagination: {
