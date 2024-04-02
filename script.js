@@ -67,24 +67,28 @@ $(document).ready(function(){
                                         </span>
                                         <span class="location-text">${item.location}</span>
                                     </li>
-                                    <li class="d-flex ">
-                                        <span class="d-flex align-items-center">
-                                            <img class="icon_footer_list" src="icon/phone-red.png" alt="Phone"/>
+                                    <li class="d-flex gap-3">
+                                        <span class="d-flex item_child_footer">
+                                            <span class="d-flex align-items-center ">
+                                                <img class="icon_footer_list" src="icon/phone-red.png" alt="Phone"/>
+                                            </span>
+                                            <span class="location-text">${item.phone}</span>
+                                            </span>
+                                        <span class="d-flex item_child_footer">
+                                                <span class="d-flex align-items-center">
+                                                    <img class="icon_footer_list" src="icon/clock-red.png" alt="Clock"/>
+                                                </span>
+                                            <span class="location-text">${item.time}</span>
                                         </span>
-                                        <span class="location-text">${item.phone}</span>
                                     </li>
+                                   
                                     <li class="d-flex ">
                                         <span class="d-flex align-items-center">
                                             <img class="icon_footer_list" src="icon/mail-red.png" alt="Mail"/>
                                         </span>
                                         <span class="location-text">${item.email}</span>
                                     </li>
-                                    <li class="d-flex">
-                                        <span class="d-flex align-items-center">
-                                            <img class="icon_footer_list" src="icon/clock-red.png" alt="Clock"/>
-                                        </span>
-                                        <span class="location-text">${item.time}</span>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             `
@@ -203,7 +207,7 @@ theo_doi.forEach(item =>{
         spaceBetween: 0,
         loop: true,
         speed:1000,
-        effect: 'fade',
+        effect: 'slide',
         autoplay:{
             delay:5000,
         },    

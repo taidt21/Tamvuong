@@ -86,7 +86,10 @@ header + section {
 /* HEADER MOBILE */
 @media(max-width:992px){
     header + section{
-        margin-top: 51px;
+        margin-top: 150px;
+    }
+    #section-1.d-none + section {
+        margin-top: 150px;
     }
     .logo_brand img{
         height: 60px;
