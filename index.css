@@ -1,51 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    white-space: normal;
-}
 
-:root{
-    --main:#9a1c21;
-    --navList:#333;
-    --description:#212529;
-    --white:#fff;
-}
-html,body{
-    overflow-x:hidden ;
-    width: 100vw;
-}
-ul{
-    list-style-type: none;
-    padding-left: 0;
-}
-a{
-    text-decoration: none;
-}
-.arrow {
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  .breadcrumb{
-    gap: 8px;
-  }
-  .breadcrumb span {
-    color: var(--main);
-    font-weight: 700;
-  }
-  .breadcrumb  li a {
-    color: var(--navList);
-  }
 .swiper_home{
-    height: calc(100vh - 81px);
+    height: 590px;
 }
 .swiper_home .swiper-slide img {
     height: 100%;
@@ -116,9 +71,7 @@ a{
     position: absolute;
     border:1px solid var(--main);
 }
-.mt-60{
-    margin-top: 60px;
-}
+
 #sidebar_nav {
     display: flex;
     flex-direction: column;
@@ -178,6 +131,10 @@ a{
 }
 .product_services .col-lg-3{
     background-color: #C4C4C4;
+    width: fit-content;
+}
+.product_services .col-lg-9{
+    flex-grow: 1;
 }
 .product_logo img {
     width:100px;
@@ -186,12 +143,18 @@ a{
     object-fit: contain;
 }
 #section-3{
-    background-image: url('img/bg-right-corner-01.png');
+    background-image: url('img/bg-award-repeat.png');
     background-position: right center;
     background-size: cover;
     padding: 20px 0;
     background-repeat: no-repeat;
 
+}
+#section-3 .container{
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url('img/bg-right-corner-01.png');
 }
 .description_groups{
     display: flex;
@@ -202,6 +165,10 @@ a{
     color: var(--description);
     text-align: justify;
     font-size: 14px;
+}
+.award_image img {
+    width:100%;
+    object-fit: contain; 
 }
 .title_section_3{
     font-size: 20px;
@@ -286,9 +253,7 @@ a{
     border-radius: 8px;
     margin-top: auto;
 }
-.breadcrumb li{
 
-}
 @media(max-width:992px){
     .swiper_home{
         height: calc(100vh - 63px);
@@ -326,6 +291,7 @@ a{
 
 }
 @media(max-width:768px){
+    
     .swiper_home {
         height:58vw;
     }
@@ -340,11 +306,15 @@ a{
         background-image: unset;
     }
     #section-3 .col-lg-4{
-        background-position: bottom center;
+        
+        background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('img/img-pomotion.jpg');
-        padding-bottom: 90px;
+        background-image: url('img/bg-right-corner-01.png');
+       
+    }
+    .award_image{
+        margin-top: 24px;
     }
     .title_section_3{
         font-size: 16px;

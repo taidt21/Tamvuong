@@ -86,7 +86,9 @@ footer .location-text{
 }
 @media(max-width:768px){
     .logo_footer img{
-        width: 150px;
+        width: 200px;
+        height:37px;
+        object-fit: contain;
     }
     #footer_bottom p{
         text-align: start;
