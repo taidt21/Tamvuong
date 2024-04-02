@@ -255,7 +255,7 @@ theo_doi.forEach(item =>{
       data_product_link.forEach(item =>{
         item_product_link += ` 
                             <li>
-                                <a class="d-flex align-items-center gap-2 py-2" href="${item.link}">
+                                <a target="_blank class="d-flex align-items-center gap-2 py-2" href="${item.link}">
                                 <span>
                                  <img src="${item.icon}" alt=""/>
                                 </span>
