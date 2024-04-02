@@ -88,4 +88,7 @@ footer .location-text{
     .logo_footer img{
         width: 150px;
     }
+    #footer_bottom p{
+        text-align: start;
+    }
 }
