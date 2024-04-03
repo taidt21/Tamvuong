@@ -84,7 +84,7 @@ header + section {
     gap:8px;
 }
 /* HEADER MOBILE */
-@media(max-width:992px){
+@media(max-width:768px){
     header + section{
         margin-top: 150px;
     }
@@ -170,5 +170,15 @@ header + section {
         -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(107deg) brightness(101%) contrast(103%);
                 filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(107deg) brightness(101%) contrast(103%);
         opacity: 1;
+    }
+}
+@media(max-width:992px) and (min-width:768px){
+    header .container {
+        max-width: 100%;
+    }
+    .navbar-nav.nav-lg{
+        gap: 0;
+        justify-content: space-between!important;
+        width: 100%;
     }
 }

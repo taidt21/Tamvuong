@@ -7,15 +7,31 @@ $(document).ready(function(){
         "VietAIR boasts a dedicated and professional team ready to offer 24/7 support for every flight. Over the past 19 years, we have served and satisfied more than 5 million flight tickets, serving nearly 150,000 customers both domestically and internationally.",
         "VietAIR continuously strives to provide customers with the best products and service quality."
     ];
-    let item = '';
+const data_onetour = [
+    "Flight and hotel package","Sightseeing tickets and day tours","Package tour","Visa processing service"
+];
+    let item_lydo_vietair = ``;
+    let item_lydo_onetour = ``;
     data_vietair.forEach(item =>{
-        item += `<li class="item_lydo">
-                        <span>
-                        <img src="./icon/icon-finder_check.png" alt="check"/>
-                        </span>
-                    <span>${item}</span> 
-                    
-                </li>`
+        item_lydo_vietair += `<li class="item_lydo">
+        <span>
+        <img src="./icon/icon-finder_check.png" alt="check"/>
+        </span>
+        <span>${item}</span> 
+        
+        </li>`;
+      
     });
-    $('#ly_do_vietair').html(item);
+  data_onetour.forEach(item =>{
+    item_lydo_onetour+= `<li class="item_lydo">
+                            <span>
+                            <img src="./icon/icon-finder_check.png" alt="check"/>
+                            </span>
+                            <span>${item}</span> 
+                        </li>`;
+  })
+        $('#ly_do_onetour').html(item_lydo_onetour);
+        $('#ly_do_vietair').html(item_lydo_vietair);
+        
+
 })

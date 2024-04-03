@@ -1,13 +1,13 @@
+
 .bg-introduction img {
     width: 730px;
     height: 580px;
-    object-fit: contain ;
+    -o-object-fit: contain ;
+       object-fit: contain ;
 }
 .bg-introduction {
     float: right;
-    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
     shape-outside: polygon( 100%);
-    -webkit-shape-margin:20px;
     shape-margin: 20px;
 }
 #thu_ngo .content{
@@ -24,10 +24,17 @@
     text-align: right;
     border-right:2px solid var(--main);
     padding-right: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .block_brand_text h2{
     margin-bottom: 0;
@@ -41,10 +48,69 @@
     font-size: 14px;
     margin-bottom: 0;
     text-align: justify;
+    color: var(--description);
 }
 .section_brand .col-lg-3{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 .section_brand .col-lg-9{
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.ly_do {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap:16px;
+}
+.item_lydo{
+    color: var(--description);
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap:8px;
+}
+.item_lydo span {
+    display: block;
+    text-align: justify;
+}
+@media(max-width:992px){
+    .bg-introduction img{
+        width: 100%;
+        height: auto;
+    }
+    .bg-introduction{
+        float: none;
+        shape-outside: none;
+        margin-bottom: 24px;
+    }
+    #section-1 .title_h2{
+        margin-bottom: 0;
+        
+    }
+    iframe{
+        height:300px
+    }
+    .block_brand_text{
+        border: 0;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .service_band{
+        text-align: left;
+        border-left: 2px solid var(--main);
+        padding-left: 8px;
+        margin-left: 8px;
+    }
+    
 }
