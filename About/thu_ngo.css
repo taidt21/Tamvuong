@@ -14,3 +14,37 @@
     font-size: 14px;
     text-align: justify;
 }
+.title_branch{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--main);
+    text-transform: uppercase;
+}
+.block_brand_text{
+    text-align: right;
+    border-right:2px solid var(--main);
+    padding-right: 16px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.block_brand_text h2{
+    margin-bottom: 0;
+}
+.block_brand_text p{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.description_brand{
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+.section_brand .col-lg-3{
+    width: fit-content;
+}
+.section_brand .col-lg-9{
+    flex-grow: 1;
+}
