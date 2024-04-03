@@ -116,5 +116,11 @@
         padding-left: 8px;
         margin-left: 8px;
     }
+    #ly_do_onetour{
+        width: 100%;
+    }
+    #ly_do_onetour span{
+        text-align: left;
+    }
     
 }
