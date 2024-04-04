@@ -1,0 +1,13 @@
+.bg-introduction {
+    width: 730px;
+    height: 630px;
+    float: right;
+
+    -webkit-shape-margin: 10em;
+    shape-margin: 10em;
+    -webkit-shape-outside: polygon(20% 0%, 100% 1%, 100% 100%, 68% 100%);
+    shape-outside: polygon(20% 0%, 100% 1%, 100% 100%, 68% 100%);
+}
+.description_brand{
+    text-align: justify;
+}

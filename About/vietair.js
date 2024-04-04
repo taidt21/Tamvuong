@@ -17,4 +17,4 @@ $(document).ready(()=>{
                         </li>`
     });
     $('#lua_chon_viettair').html(item_vietair);
-})
+});
