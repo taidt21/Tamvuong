@@ -1,0 +1,49 @@
+.logo_vietair{
+    width: 150px;    
+    height: 62px;
+}
+.bg-vietair {
+    -webkit-shape-margin: 3em;
+    shape-margin: 3em;
+    -webkit-shape-outside: polygon(0 0, 100% 0%, 52% 100%, 0% 100%);
+    shape-outside: polygon(0 0, 100% 0%, 58% 100%, 0% 100%);
+}
+.description_brand{
+    text-align: justify;
+    color: var(--description);
+}
+.title_h2_page_child {
+    font-size: 22px;
+    color: var(--main);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+#lua_chon_viettair{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+#lua_chon_viettair li {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--main);
+    border-radius: 12px;
+    padding: 16px;
+}
+#lua_chon_viettair li span {
+    font-size: 14px;
+    text-align: center;
+}
+.icon_check {
+    background-color: var(--white);
+    margin-top: -30px;
+}
+@media(max-width:768px){
+    #lua_chon_viettair{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
