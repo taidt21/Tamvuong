@@ -17,7 +17,7 @@ html,body{
     overflow-x:hidden ;
     width: 100vw;
 }
-ul{
+ul,ol{
     list-style-type: none;
     padding-left: 0;
 }
@@ -86,4 +86,8 @@ button{
     .title_h2::after{
         content: unset;
     }
+    p{
+        font-size: 14px;
+    }
+    
 }

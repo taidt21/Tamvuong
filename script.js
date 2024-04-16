@@ -8,6 +8,7 @@ $(document).ready(function(){
         spaceBetween: 0,
         loop: true,
         speed:1000,
+        grabCursor:true,
         effect: 'slide',
         autoplay:{
             delay:5000,

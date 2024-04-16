@@ -1,13 +1,123 @@
+@media(min-width:992px){
+
+
 .bg-introduction {
     width: 730px;
     height: 630px;
-    float: right;
+    /* float: right; */
 
     -webkit-shape-margin: 10em;
     shape-margin: 10em;
     -webkit-shape-outside: polygon(20% 0%, 100% 1%, 100% 100%, 68% 100%);
     shape-outside: polygon(20% 0%, 100% 1%, 100% 100%, 68% 100%);
 }
+}
 .description_brand{
     text-align: justify;
+    color: var(--des);
+}
+.higthlight{
+    color: var(--main);
+    font-weight: 600;
+}
+#onetour::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.title_h2{
+    margin-bottom: 0;
+}
+
+.about-service {
+    max-width: 87%;
+    font-size: 12px;
+}
+
+.about-service .about-number {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 60px solid #58585a;
+    transform: skew(30deg);
+    -o-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    color: #fff;
+    font-size: 30px;
+    left: -30px;
+}
+.about-service__inner {
+    transform: skew(30deg);
+    -o-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    padding: 20px 0 20px 20px;
+}
+.about-service.first-child .about-service__box:first-child {
+    padding: 0 0 0 25px;
+}
+.about-service__box:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-service.first-child .about-service__box:last-child {
+    padding: 0;
+}
+
+.about-service__box:first-child {
+    text-transform: uppercase;
+  
+    padding: 0 0 0 20px;
+}
+.about-service .about-service__box:last-child {
+    padding: 0 0 0 10px;
+}
+.about-service {
+    background: #c02329;
+    color: #fff;
+    transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    
+    font-size: 10px;
+    margin: 3em 0 1em 2em;
+    position: relative;
+    min-height: 75px;
+    line-height: 18px;
+}
+
+.about-service .about-number span {
+    position: absolute;
+    content: "";
+    display: block;
+    color: #fff;
+    font-size: 34px;
+    left: -10px;
+    font-weight: bold;
+    top: -48px;
+}
+.about-service.first-child .about-service__box:first-child {
+    padding: 0 0 0 25px;
+}
+@media(max-width:992px){
+    
+    .about-service__box{
+        font-size:16px!important;
+        padding-left: 20px!important;
+        line-height: 1.5;
+    }
+    .about-service {
+        display: flex;
+        align-items: center;
+    }
 }
