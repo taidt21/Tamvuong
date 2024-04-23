@@ -104,7 +104,7 @@
     position: absolute;
     top: 16px;
     left: 16px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(3%) hue-rotate(197deg) brightness(107%) contrast(100%);
+    
 }
 
 #product_images a .image_product {

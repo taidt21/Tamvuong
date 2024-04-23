@@ -80,7 +80,7 @@ $(document).ready(function(){
             },
             {
                 name:"Onetour",
-                logo:"icon/logo-onetour_white.png",
+                logo:"icon/logo_onetour_white.svg",
                 image:"img/service_onetour.jpg",
                 link:"https://onetour.vn/"
             },
@@ -148,5 +148,5 @@ $(document).ready(function(){
       $('#new_home').html(item_news)
 
       
-    
+
 });
