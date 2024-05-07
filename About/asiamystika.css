@@ -44,3 +44,13 @@
 .box-founder p {
     color: #000;
 }
+.section-2-heading{
+    font-size:32px;
+}
+.section-list-item{
+    font-size:18px;
+}
+#section-3 ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
