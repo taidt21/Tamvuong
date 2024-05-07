@@ -1,0 +1,94 @@
+
+.bg-archivement{
+    background-image: url('./img/archievement-bg-new-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 340px;
+}
+.year-circle{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--main);
+    font-size: 20px ;
+    font-weight: 700;
+    color: #555;
+    margin: auto;
+    position: relative;
+    background: #fff;
+}
+.block-year__text p {
+    margin-bottom: 0;
+}
+.section-lich-su .col-md-2{
+    display: flex;
+}
+.year-circle::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: solid 10px transparent;
+    border-top: solid 10px transparent;
+}
+.year-circle.left::before{
+    border-right: solid 10px var(--main);
+    left:-19px;
+}
+.year-circle.right::before{
+    border-left:solid 10px var(--main);
+    right: -19px;;
+}
+.section-lich-su .container{
+    position: relative;
+    gap: 40px;
+}
+.section-lich-su .container::after{
+    content:"";
+    position: absolute;
+    display: block;
+    border-right: 2px dashed #555;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.section-lich-su .container .row{
+    position: relative;
+    z-index: 2;;
+}
+
+@media(max-width:768px){
+    .section-lich-su .container .row:nth-last-child(odd){
+        flex-direction: column-reverse;
+    }
+    .year-circle.right::before{
+        display: none;
+    }
+    .bg-archivement{
+        background-position: right;
+    }
+    .section-lich-su .container{
+        gap: 0;
+    }
+    .section-lich-su .container .row{
+        padding: 20px 0px;
+        border-bottom: 1px dashed #555;
+    }
+    .year-circle.left::before{
+        display: none;
+    }
+    .section-lich-su .col-md-2{
+        margin-bottom:8px;
+    }
+    .section-lich-su .container::after{
+        display: none;
+    }
+}

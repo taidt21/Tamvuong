@@ -33,7 +33,7 @@ button{
     display: inline-block;
     padding: 3px;
   }
-  .right {
+  .arrow.right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
